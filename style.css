@@ -9,7 +9,7 @@ body {
   background-color: #eeeeea;
 }
 
-.wrapper {
+.projects-wrapper {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -17,14 +17,14 @@ body {
   justify-content: center;
 }
 
-.container {
+.projects-container {
   height: 400px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
 }
 
-.card {
+.project-card {
   width: 80px;
   border-radius: .75rem;
   background-size: cover;
@@ -39,13 +39,13 @@ body {
 }
 
 
-.card>.row {
+.project-card>.row {
   color: white;
   display: flex;
   flex-wrap: nowrap;
 }
 
-.card>.row>.icon {
+.project-card>.row>.icon {
   background: #223;
   color: white;
   border-radius: 50%;
@@ -56,7 +56,7 @@ body {
   margin: 15px;
 }
 
-.card>.row>.description {
+.project-card>.row>.description {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -91,18 +91,18 @@ input:checked+label .description {
   transform: translateY(0) !important;
 }
 
-.card[for="c1"] {
+.project-card[for="c1"] {
   background-image: url('./images/pawel-czerwinski-bX9B9c-YasY-unsplash.jpg');
 }
 
-.card[for="c2"] {
+.project-card[for="c2"] {
   background-image: url('./images/pawel-czerwinski-OOFSqPWjCt0-unsplash.jpg');
 }
 
-.card[for="c3"] {
+.project-card[for="c3"] {
   background-image: url('./images/tobias-van-schneider-lHGeqh3XhRY-unsplash.jpg');
 }
 
-.card[for="c4"] {
+.project-card[for="c4"] {
   background-image: url('./images/vinicius-amnx-amano-OHPdgstNFGs-unsplash.jpg');
 }
