@@ -7,6 +7,64 @@
 
 body {
   background-color: #eeeeea;
+  height: 100vh;
+}
+
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-tabs {
+  background: white;
+  box-shadow: 0px, 0px, 15px, 0px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5rem;
+  padding: 10px;
+  display: flex;
+  position: relative;
+}
+
+.nav-input[type="radio"] {
+  display: none;
+}
+
+.nav-label {
+  display: block;
+  height: 55px;
+  width: 200px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.nav-glider {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e6eef9;
+  width: 200px;
+  height: 55px;
+  border-radius: 2rem;
+  transition: ease .3s;
+}
+
+#tab1:checked~label[for="tab1"] {
+  color: #185ee0;
+}
+
+#tab2:checked~label[for="tab2"] {
+  color: #185ee0;
+}
+
+#tab3:checked~label[for="tab3"] {
+  color: #185ee0;
 }
 
 .projects-wrapper {
