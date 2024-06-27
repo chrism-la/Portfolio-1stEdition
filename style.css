@@ -7,6 +7,9 @@
 
 body {
   background-color: #cbcbcb;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./images/nick-iliasov-i0fCUofGjV8-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
   height: 100vh;
 }
 
@@ -177,6 +180,11 @@ body {
 
 @media screen and (max-width: 600px) {
 
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
   /* NavBar Section-------------------------------------------------------- */
   .nav-label {
     height: 20px;
@@ -203,6 +211,7 @@ body {
 
   .projects-container {
     width: 100%;
+    height: 600px;
     /* display: flex; */
     flex-direction: column;
     /* flex-wrap: nowrap; */
@@ -210,18 +219,17 @@ body {
   }
 
   .project-card {
-    width: 80px;
+    width: 100%;
     /* border-radius: .75rem; */
     background-size: cover;
     /* cursor: pointer;
     overflow: hidden;
-    border-radius: 2rem;
-    margin: 0 10px;
-    display: flex;
+    border-radius: 2rem; */
+    margin: 0;
+    /* display: flex; */
     align-items: flex-start;
-    flex-direction: column; */
-    /* transition: .6s cubic-bezier(.28, -0.03, 0, .99);
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8); */
+    /* flex-direction: column; */
+    transition: all .4s ease;
   }
 
 
@@ -239,8 +247,8 @@ body {
     width: 100%;
     opacity: 0;
     transform: translateX(30px);
-    /* transition-delay: .3s;
-    transition: all .3s ease; */
+    transition-delay: .4s;
+    transition: all .4s ease;
   }
 
   /* 
@@ -258,7 +266,8 @@ body {
   } */
 
   .projects-input:checked+label {
-    height: 600px;
+    height: 300px;
+    width: 100%;
   }
 
   .projects-input:checked+label .description {
