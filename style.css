@@ -7,7 +7,7 @@
 
 body {
   background-color: #cbcbcb;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./images/nick-iliasov-i0fCUofGjV8-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.89)), url("./images/nick-iliasov-i0fCUofGjV8-unsplash.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -84,6 +84,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .projects-container {
@@ -91,6 +92,8 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .project-card {
@@ -176,23 +179,29 @@ body {
   background-image: url('./images/vinicius-amnx-amano-OHPdgstNFGs-unsplash.jpg');
 }
 
-/* Mobile Screen Responsiveness -----------------------------------------------------------------------------------------------------*/
+
+
+/* || Mobile Screen Responsiveness _________________________________________________________________________________________________ */
+/* _________________________________________________________________________________________________________________________________ */
+/* _________________________________________________________________________________________________________________________________ */
+
+
 
 @media screen and (max-width: 600px) {
 
   body {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
   }
 
-  /* NavBar Section-------------------------------------------------------- */
+  /* Mobile NavBar Section-------------------------------------------------------- */
   .nav-label {
     height: 20px;
     width: 50px;
     font-size: .8rem;
-    font-weight: 650;
+    font-weight: 600;
   }
-
 
   .nav-glider {
     width: 50px;
@@ -207,31 +216,24 @@ body {
     transform: translateX(50px);
   }
 
-  /* Project Showcase Section--------------------------------------------- */
+  /* Mobile Project Showcase Section--------------------------------------------- */
 
   .projects-container {
     width: 100%;
     height: 600px;
-    /* display: flex; */
     flex-direction: column;
-    /* flex-wrap: nowrap; */
     justify-content: center;
+    margin: 0 10px;
+    overflow: hidden;
   }
 
   .project-card {
     width: 100%;
-    /* border-radius: .75rem; */
-    background-size: cover;
-    /* cursor: pointer;
-    overflow: hidden;
-    border-radius: 2rem; */
-    margin: 0;
-    /* display: flex; */
+    height: 80px;
+    margin: 5px 0;
     align-items: flex-start;
-    /* flex-direction: column; */
-    transition: all .4s ease;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
   }
-
 
   .project-card>.row {
     display: flex;
@@ -246,24 +248,10 @@ body {
     height: 80px;
     width: 100%;
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateY(30px);
     transition-delay: .4s;
     transition: all .4s ease;
   }
-
-  /* 
-  .description p {
-    color: #b0b0ba;
-    padding-top: 5px;
-  }
-
-  .description h4 {
-    text-transform: uppercase;
-  }
-
-  .projects-input {
-    display: none;
-  } */
 
   .projects-input:checked+label {
     height: 300px;
@@ -272,23 +260,6 @@ body {
 
   .projects-input:checked+label .description {
     opacity: 1 !important;
-    transform: translateX(0) !important;
+    transform: translateY(0) !important;
   }
-
-  .project-card[for="c1"] {
-    background-image: url('./images/pawel-czerwinski-bX9B9c-YasY-unsplash.jpg');
-  }
-
-  .project-card[for="c2"] {
-    background-image: url('./images/pawel-czerwinski-OOFSqPWjCt0-unsplash.jpg');
-  }
-
-  .project-card[for="c3"] {
-    background-image: url('./images/tobias-van-schneider-lHGeqh3XhRY-unsplash.jpg');
-  }
-
-  .project-card[for="c4"] {
-    background-image: url('./images/vinicius-amnx-amano-OHPdgstNFGs-unsplash.jpg');
-  }
-
 }
