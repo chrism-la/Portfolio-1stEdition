@@ -18,6 +18,7 @@ body {
 nav {
   height: 60px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: 24px 5px;
   padding: 5px;
@@ -28,9 +29,8 @@ nav {
 }
 
 .nav-tabs {
-  padding: 10px;
-  border-radius: 5rem;
-  padding: 10px;
+  border: 2px solid #223;
+  border-radius: 2rem;
   display: flex;
   position: relative;
 }
@@ -55,9 +55,9 @@ nav {
 
 .nav-glider {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  background: #cbcbcb;
+  top: 0px;
+  left: 0px;
+  background: #223;
   width: 200px;
   height: 55px;
   border-radius: 2rem;
@@ -65,11 +65,11 @@ nav {
 }
 
 #tab1:checked~.nav-label[for="tab1"] {
-  color: #223;
+  color: white;
 }
 
 #tab2:checked~.nav-label[for="tab2"] {
-  color: #223;
+  color: white;
 }
 
 #tab1:checked~.nav-glider {
@@ -200,15 +200,15 @@ nav {
 
   /* Mobile NavBar Section-------------------------------------------------------- */
   .nav-label {
-    height: 20px;
-    width: 50px;
-    font-size: .8rem;
-    font-weight: 600;
+    height: 36px;
+    width: 80px;
+    font-size: 14px;
+    font-weight: 550;
   }
 
   .nav-glider {
-    width: 50px;
-    height: 20px;
+    height: 36px;
+    width: 80px;
   }
 
   #tab1:checked~.nav-glider {
@@ -216,7 +216,7 @@ nav {
   }
 
   #tab2:checked~.nav-glider {
-    transform: translateX(50px);
+    transform: translateX(80px);
   }
 
   /* Mobile Project Showcase Section--------------------------------------------- */
