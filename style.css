@@ -11,20 +11,23 @@ body {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 /* NavBar Section ------------------------------------------------------------------------------------------------------------------ */
-.nav-wrapper {
-  width: 100%;
-  margin-top: 24px;
+nav {
+  height: 60px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 24px 5px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(1px);
+  overflow: hidden;
 }
 
 .nav-tabs {
-  background: #223;
-  box-shadow: 0px, 0px, 15px, 0px rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 5rem;
   padding: 10px;
