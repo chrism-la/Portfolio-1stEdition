@@ -23,10 +23,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 24px 5px;
+  margin: 24px 10px;
   padding: 5px;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  border-radius: 2rem;
   backdrop-filter: blur(1px);
   overflow: hidden;
 }
@@ -126,7 +126,7 @@ nav {
 .project-card>.row>.icon {
   background: #223;
   color: white;
-  border-radius: 50%;
+  border-radius: 2rem;
   width: 50px;
   display: flex;
   justify-content: center;
@@ -209,7 +209,18 @@ nav {
     overflow-x: hidden;
   }
 
-  /* Mobile NavBar Section-------------------------------------------------------- */
+  /* Mobile NavBar Section----------------------- */
+
+  nav {
+    height: 60px;
+    margin: 24px 10px 10px 10px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    backdrop-filter: blur(1px);
+    overflow: hidden;
+  }
+
   .nav-label {
     height: 36px;
     width: 80px;
@@ -230,7 +241,7 @@ nav {
     transform: translateX(80px);
   }
 
-  /* Mobile Project Showcase Section--------------------------------------------- */
+  /* Mobile Project Showcase Section--------------*/
 
   .projects-container {
     width: 100%;
